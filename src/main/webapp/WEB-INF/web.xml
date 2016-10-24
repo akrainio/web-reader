@@ -11,9 +11,17 @@
     <servlet-name>FileUploadServlet</servlet-name>
     <servlet-class>andrei.test.FileUploadServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>ReadFileServlet</servlet-name>
+    <servlet-class>andrei.test.ReadFileServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
     <servlet-name>FileUploadServlet</servlet-name>
     <url-pattern>/upload-file/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReadFileServlet</servlet-name>
+    <url-pattern>/read-file/*</url-pattern>
   </servlet-mapping>
 
 

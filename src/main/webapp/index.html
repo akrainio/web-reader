@@ -5,11 +5,14 @@
     <title>Upload file</title>
 </head>
 <body>
-<p>Hello</p>
-<form method="post" action="upload-file">
-    filename: <input name="filename">
+<form method="post" action="upload-file" enctype="multipart/form-data">
+    <p>filename: <input name="filename"></p>
+    file: <input type="file" name="file">
     <input type="submit">
-    <input type="reset">
+</form>
+<br>
+<form method="get" action="read-file">
+    <input type="submit" value="Read File">
 </form>
 </body>
 </html>
